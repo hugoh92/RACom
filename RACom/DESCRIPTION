@@ -1,0 +1,15 @@
+Package: RACom
+Type: Package
+Title: Pacote para analise combinatoria
+Version: 1.0.0
+Author: Hugo Henrique, Adriane Portela.
+Maintainer: Hugo Henrique <hugoholiveira45@gmail.com>
+Description: Pacote para resolução de questões envonvendo analise combinatoria
+             mais informacoes consulte o material.
+Depends: R (>= 3.3.0)
+License: GPL-3
+Encoding: ISO-8859-1
+LazyData: true
+NeedsCompilation: no
+Packaged: 2019-04-07 14:21:48 UTC; Hugo Henrique
+RoxygenNote: 6.1.1
