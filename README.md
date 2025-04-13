@@ -3,9 +3,9 @@
 Este pacote R implementa uma árvore de decisão para identificar o tipo correto de **análise combinatória** com base em três perguntas simples. Além disso, contém funções para calcular:
 
 - Princípio multiplicativo
-- Permutações (simples e com repetição)
-- Arranjos (com e sem repetição)
-- Combinações (com e sem repetição)
+- Permutações (simples e com reposição)
+- Arranjos (com e sem reposição)
+- Combinações (com e sem reposição)
 
 ---
 
@@ -61,8 +61,8 @@ Ao final, a função indicará o tipo de análise combinatória adequada.
 | `acombi()`     | Árvore de decisão interativa para descobrir o tipo de análise combinatória |
 | `pm(a)`        | Princípio multiplicativo (produto dos elementos de um vetor)          |
 | `pn(n)`        | Permutação simples de `n` elementos                                    |
-| `pmr(n,b,a)`   | Permutação com repetição                                               |
-| `combobjr(n,r)`| Combinação com reposição (n = r)                                       |
+| `pmr(n,b,a)`   | Permutação com reposição                                               |
+| `combobjr(n,r)`| Combinação com reposição (n <= r)                                       |
 | `combobj(a)`   | Combinação sem reposição (n = r)                                       |
 | `arrj(n, r)`   | Arranjo com reposição                                                  |
 | `arrjsp(n, r)` | Arranjo sem reposição                                                 |
@@ -95,13 +95,13 @@ pm(c(2, 3, 4))  # Resultado: 24
 pn(5)  # Resultado esperado: 120 (5!)
 ```
 
-### 4. Permutação com Repetição
+### 4. Permutação com Reposição
 
 ```r
 pmr(10, 3, 2)  # Resultado baseado na fórmula: 10! / (3! * 2!)
 ```
 
-### 5. Combinação com Reposição (n = r)
+### 5. Combinação com Reposição (n <= r)
 
 ```r
 combobjr(4, 4)
@@ -140,9 +140,10 @@ combsr(6, 3)  # 6! / (3! * 3!) = 20
 ---
 
 ## 👥 Autoria
-
-- Hugo Henrique Oliveira
 - Adriane Caroline Portela
+- Denise Nunes Viola
+- Hugo Henrique Oliveira
+
 
 ---
 
